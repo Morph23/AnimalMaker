@@ -2,7 +2,13 @@
 
 A Python application that transforms handwritten animal names into black and white silhouettes with smooth wave animations. Draw an animal name with your mouse, wait 3 seconds, and watch your handwriting transform into a dithered silhouette over 25 seconds.
 
-Created for my little cousin who is learning about animals for the first time - making education interactive and magical.
+<video controls width="720">
+   <source src="assets/animaldemo.mp4" type="video/mp4">
+   <!-- fallback -->
+   Your browser does not support the video tag. You can download the demo at assets/animaldemo.mp4
+</video>
+
+Created for my little cousin who is learning about animals for the first time <3
 
 ## Installation
 
@@ -75,3 +81,7 @@ cat, dog, elephant, lion, tiger, bear, wolf, fox, rabbit, horse, cow, pig, sheep
 - **Transform Animations**: Wave transform, falling sand etc. particle physics animation
 - **Dual OCR**: Tesseract + EasyOCR for robust handwriting recognition
 - **Particle Physics**: 1000+ particles with gravity, friction, and wave motion
+
+## License
+
+MIT License
