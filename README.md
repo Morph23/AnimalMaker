@@ -2,17 +2,11 @@
 
 A Python application that transforms handwritten animal names into black and white silhouettes with smooth wave animations. Draw an animal name with your mouse, wait 3 seconds, and watch your handwriting transform into a dithered silhouette over 25 seconds.
 
-<video autoplay muted loop playsinline width="720">
-   <source src="assets/animaldemo.mp4" type="video/mp4">
-   <!-- fallback -->
-   Your browser does not support the video tag. You can download the demo at assets/animaldemo.mp4
-</video>
+[![Demo Video](assets/demo-thumbnail.png)](assets/animaldemo.mp4)
 
-> Note: GitHub strips autoplay in README previews and many browsers block autoplay unless the video is muted — the video will autoplay when the file is opened locally in a browser or embedded in pages that allow autoplay.
+*Click the image above to watch the demo video*
 
-Created for my little cousin who is learning about animals for the first time <3
-
-## Installation
+Created for my little cousin who is learning about animals for the first time <3## Installation
 
 ### Prerequisites
 - Python 3.8+
