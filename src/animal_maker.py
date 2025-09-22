@@ -1,7 +1,3 @@
-"""
-Animal Maker - Main application class that orchestrates all components
-"""
-
 import pygame
 import sys
 import time
@@ -100,7 +96,7 @@ class AnimalMaker:
                     
     def update(self) -> None:
         """Update application logic"""
-        dt = self.clock.tick(60) / 1000.0  # Delta time in seconds
+        dt = self.clock.tick(60) / 1000.0
         
         if self.state == AppState.DRAWING:
             # Check if user has been idle and there's something to process
@@ -206,7 +202,7 @@ class AnimalMaker:
                 center_y = drawing_bounds[1] + draw_h // 2
                 target_offset = (center_x - new_w // 2, center_y - new_h // 2)
 
-            # Option 3: Floyd-Steinberg Dithering for high quality black and white
+            
             try:
                 from PIL import Image
                 # Convert pygame surface to PIL Image
@@ -321,9 +317,9 @@ class AnimalMaker:
                 progress = self.animator.get_progress()
                 
                 # Only start revealing the silhouette after particles have had time to move
-                if progress > 0.3:  # Start revealing after 30% of animation
+                if progress > 0.3:
                     # Adjust progress for smoother reveal (slower at start, faster at end)
-                    reveal_progress = (progress - 0.3) / 0.7  # Map 0.3-1.0 to 0.0-1.0
+                    reveal_progress = (progress - 0.3) / 0.7
                     reveal_progress = reveal_progress * reveal_progress  # Quadratic for smooth acceleration
                     
                     # Create a surface for the progressive reveal

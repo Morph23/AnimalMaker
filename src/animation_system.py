@@ -1,7 +1,3 @@
-"""
-Animation System - Handles pixel transformation animations
-"""
-
 import pygame
 import numpy as np
 import math
@@ -168,7 +164,7 @@ class AnimationManager:
         self.particles: List[Particle] = []
         self.animation_type = AnimationType.WAVE_TRANSFORM  # Default to wave transform
         self.progress = 0.0
-        self.duration = 25.0  # seconds - even longer for ultra-smooth, gradual appearance
+        self.duration = 20.0
         self.is_animating = False
         self.center_point = (0, 0)
         

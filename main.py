@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-AnimalMaker - Transform handwritten animal names into animated animal pictures
-Main entry point for the application
-"""
 
 import sys
 import os

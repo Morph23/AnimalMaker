@@ -1,13 +1,8 @@
-"""
-Drawing Canvas - Handles mouse input and drawing functionality
-"""
-
 import pygame
 import numpy as np
 from typing import List, Tuple, Optional
 
 class DrawingCanvas:
-    """Manages the drawing canvas where users write animal names"""
     
     def __init__(self, width: int = 1200, height: int = 800):
         self.width = width

@@ -1,7 +1,3 @@
-"""
-OCR Recognition - Handles text recognition from drawn images
-"""
-
 import pygame
 import cv2
 import numpy as np
@@ -143,7 +139,7 @@ class OCRRecognizer:
                     text = re.sub(r'[^a-zA-Z\s]', '', text)
                     text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces with single space
                     
-                    if text and len(text) >= 2:  # At least 2 characters
+                    if text and len(text) >= 2:
                         return text
                         
                 except Exception as e:
@@ -201,7 +197,7 @@ class OCRRecognizer:
             if len(word) >= 3:
                 for animal in self.animal_names:
                     distance = self.simple_edit_distance(word, animal)
-                    if distance < min_distance and distance <= 2:  # Allow max 2 character differences
+                    if distance < min_distance and distance <= 2:
                         min_distance = distance
                         best_match = animal
                         

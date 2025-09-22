@@ -1,7 +1,3 @@
-"""
-Animal Image Manager - Handles fetching and managing animal images
-"""
-
 import pygame
 import requests
 import os
@@ -118,7 +114,7 @@ class AnimalImageManager:
             
             # Resize to standard size
             try:
-                # Try new PIL syntax first (Pillow 10.0.0+)
+                
                 pil_image = pil_image.resize(self.default_size, Image.Resampling.LANCZOS)
             except AttributeError:
                 # Fallback to old syntax for older PIL versions
