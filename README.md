@@ -75,7 +75,3 @@ cat, dog, elephant, lion, tiger, bear, wolf, fox, rabbit, horse, cow, pig, sheep
 - **Transform Animations**: Wave transform, falling sand etc. particle physics animation
 - **Dual OCR**: Tesseract + EasyOCR for robust handwriting recognition
 - **Particle Physics**: 1000+ particles with gravity, friction, and wave motion
-
-## License
-
-MIT License
